@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zs28iwVoJ1T1DACtoALpG5yoYY1VqdlUXLSS08U4TK4bkXGNai9n67k79lSgmevI6h4a2VCw8NvF7WeU7w00sA==",
+  "dgSpecHash": "wcDT2S19zBT24zi7onxQwF7Y6FI0TavXSgH2MBhAHR/qKjvlignM81YdTi8yMkUBXsRWBK8ScdkEXWmwv3c68Q==",
   "success": true,
-  "projectFilePath": "/home/maicolcubides/Documentos/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj",
+  "projectFilePath": "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
