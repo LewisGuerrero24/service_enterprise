@@ -1,0 +1,16 @@
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/serviceEnterprise.Application.csproj.AssemblyReference.cache
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/serviceEnterprise.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/serviceEnterprise.Application.AssemblyInfoInputs.cache
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/serviceEnterprise.Application.AssemblyInfo.cs
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/serviceEnterprise.Application.csproj.CoreCompileInputs.cache
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/serviceEnterprise.Application.sourcelink.json
+/home/maicolcubides/Documentos/service_enterprise/src/Application/bin/Debug/net8.0/serviceEnterprise.Application.deps.json
+/home/maicolcubides/Documentos/service_enterprise/src/Application/bin/Debug/net8.0/serviceEnterprise.Application.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Application/bin/Debug/net8.0/serviceEnterprise.Application.pdb
+/home/maicolcubides/Documentos/service_enterprise/src/Application/bin/Debug/net8.0/serviceEnterprise.Domain.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Application/bin/Debug/net8.0/serviceEnterprise.Domain.pdb
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/serviceEnterprise.Application.csproj.CopyComplete
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/serviceEnterprise.Application.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/refint/serviceEnterprise.Application.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/serviceEnterprise.Application.pdb
+/home/maicolcubides/Documentos/service_enterprise/src/Application/obj/Debug/net8.0/ref/serviceEnterprise.Application.dll

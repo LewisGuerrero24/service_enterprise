@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj": {}
+    "/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj": {
+    "/home/maicolcubides/Documentos/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj",
+        "projectUniqueName": "/home/maicolcubides/Documentos/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj",
         "projectName": "serviceEnterprise.Domain",
-        "projectPath": "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj",
-        "packagesPath": "/home/lewis/.nuget/packages/",
-        "outputPath": "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Domain/obj/",
+        "projectPath": "/home/maicolcubides/Documentos/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj",
+        "packagesPath": "/home/maicolcubides/.nuget/packages/",
+        "outputPath": "/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lewis/.nuget/NuGet/NuGet.Config"
+          "/home/maicolcubides/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,21 +53,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.120/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj": {
+    "/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj",
+        "projectUniqueName": "/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj",
         "projectName": "serviceEnterprise.Infrastructure",
-        "projectPath": "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj",
-        "packagesPath": "/home/lewis/.nuget/packages/",
-        "outputPath": "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Infrastructure/obj/",
+        "projectPath": "/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj",
+        "packagesPath": "/home/maicolcubides/.nuget/packages/",
+        "outputPath": "/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lewis/.nuget/NuGet/NuGet.Config"
+          "/home/maicolcubides/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -79,8 +79,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj": {
-                "projectPath": "/home/lewis/Documentos/ProyectosPersonales/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj"
+              "/home/maicolcubides/Documentos/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj": {
+                "projectPath": "/home/maicolcubides/Documentos/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj"
               }
             }
           }
@@ -95,6 +95,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[10.0.1, )"
@@ -116,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.120/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

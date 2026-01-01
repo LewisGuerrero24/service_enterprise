@@ -1,0 +1,12 @@
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/bin/Debug/net8.0/serviceEnterprise.Domain.deps.json
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/bin/Debug/net8.0/serviceEnterprise.Domain.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/bin/Debug/net8.0/serviceEnterprise.Domain.pdb
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/Debug/net8.0/serviceEnterprise.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/Debug/net8.0/serviceEnterprise.Domain.AssemblyInfoInputs.cache
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/Debug/net8.0/serviceEnterprise.Domain.AssemblyInfo.cs
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/Debug/net8.0/serviceEnterprise.Domain.csproj.CoreCompileInputs.cache
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/Debug/net8.0/serviceEnterprise.Domain.sourcelink.json
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/Debug/net8.0/serviceEnterprise.Domain.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/Debug/net8.0/refint/serviceEnterprise.Domain.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/Debug/net8.0/serviceEnterprise.Domain.pdb
+/home/maicolcubides/Documentos/service_enterprise/src/Domain/obj/Debug/net8.0/ref/serviceEnterprise.Domain.dll

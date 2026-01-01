@@ -1,0 +1,16 @@
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/bin/Debug/net8.0/serviceEnterprise.Infrastructure.deps.json
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/bin/Debug/net8.0/serviceEnterprise.Infrastructure.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/bin/Debug/net8.0/serviceEnterprise.Infrastructure.pdb
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/bin/Debug/net8.0/serviceEnterprise.Domain.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/bin/Debug/net8.0/serviceEnterprise.Domain.pdb
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/serviceEnterprise.Infrastructure.csproj.AssemblyReference.cache
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/serviceEnterprise.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/serviceEnterprise.Infrastructure.AssemblyInfoInputs.cache
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/serviceEnterprise.Infrastructure.AssemblyInfo.cs
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/serviceEnterprise.Infrastructure.csproj.CoreCompileInputs.cache
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/serviceEnterprise.Infrastructure.sourcelink.json
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/serviceEnterprise.Infrastructure.csproj.CopyComplete
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/serviceEnterprise.Infrastructure.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/refint/serviceEnterprise.Infrastructure.dll
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/serviceEnterprise.Infrastructure.pdb
+/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/obj/Debug/net8.0/ref/serviceEnterprise.Infrastructure.dll
