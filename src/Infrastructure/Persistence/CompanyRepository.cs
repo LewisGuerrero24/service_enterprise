@@ -1,7 +1,9 @@
 using Npgsql;
 using serviceEnterprise.Domain.Entities;
+using serviceEnterprise.Domain.Exceptions;
 using serviceEnterprise.Domain.Interfaces;
 using System.Data;
+using System.Text.Json;
 
 namespace serviceEnterprise.Infrastructure.Persistence;
 
@@ -12,6 +14,41 @@ public class CompanyRepository : ICompanyRepository
     public CompanyRepository(NpgsqlConnection connection)
     {
         _connection = connection;
+    }
+
+    // Create
+    public async Task<Company> CreateAsync(Company company)
+    {
+        await using var command = _connection.CreateCommand();
+        command.CommandText = "SELECT create_company(@name)";
+        command.CommandType = CommandType.Text;
+        command.Parameters.AddWithValue("@name", company.Name);
+
+        if (_connection.State != ConnectionState.Open)
+            await _connection.OpenAsync();
+
+        var result = await command.ExecuteScalarAsync();
+
+        if (result is null)
+            throw new Exception("Database returned null");
+
+        var json = JsonDocument.Parse(result.ToString()!);
+        var root = json.RootElement;
+
+        if (!root.GetProperty("success").GetBoolean())
+        {
+            var error = root.GetProperty("error").GetString();
+            throw new DomainException(error ?? "Error creating company");
+        }
+
+        var data = root.GetProperty("data");
+
+        return Company.Rehydrate(
+            Guid.Parse(data.GetProperty("id").GetString()!),
+            data.GetProperty("name").GetString()!,
+            data.GetProperty("created_at").GetDateTime()
+        );
+
     }
 
     // Get ALL
@@ -30,30 +67,16 @@ public class CompanyRepository : ICompanyRepository
 
         while (await reader.ReadAsync())
         {
-            var company = CreateCompanyFromReader(reader);
-            companies.Add(company);
+            companies.Add(
+                Company.Rehydrate(
+                    reader.GetGuid(0),
+                    reader.GetString(1),
+                    reader.GetDateTime(2)
+                )
+            );
         }
+
         return companies;
     }
 
-    // Mapper para company
-    private static Company CreateCompanyFromReader(IDataRecord record)
-    {
-        // Constructor privado → usamos reflection controlada
-        var company = (Company)Activator.CreateInstance(
-            typeof(Company),
-            nonPublic: true
-        )!;
-
-        typeof(Company).GetProperty(nameof(Company.CompanyId))!
-            .SetValue(company, record.GetGuid(record.GetOrdinal("company_id")));
-
-        typeof(Company).GetProperty(nameof(Company.Name))!
-            .SetValue(company, record.GetString(record.GetOrdinal("name")));
-
-        typeof(Company).GetProperty(nameof(Company.CreatedAt))!
-            .SetValue(company, record.GetDateTime(record.GetOrdinal("created_at")));
-
-        return company;
-    }
 }

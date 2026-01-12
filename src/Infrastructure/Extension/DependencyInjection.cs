@@ -20,6 +20,7 @@ public static class DependencyInjection
         );
 
         services.AddScoped<ICompanyRepository, CompanyRepository>();
+        services.AddScoped<ISupplierRepository, SupplierRepository>();
 
         services.AddHealthChecks()
             .AddCheck("database", new DatabaseHealthCheck(connectionString));

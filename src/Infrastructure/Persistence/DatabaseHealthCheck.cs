@@ -1,8 +1,5 @@
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Npgsql;
-using System.Data;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace serviceEnterprise.Infrastructure.Persistence;
 

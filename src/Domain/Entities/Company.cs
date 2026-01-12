@@ -1,3 +1,5 @@
+using serviceEnterprise.Domain.Exceptions;
+
 namespace serviceEnterprise.Domain.Entities;
 
 public class Company
@@ -7,14 +9,31 @@ public class Company
     public DateTime CreatedAt {get; private set;}
 
     private Company() {}
+    
+    private Company(Guid id, string name, DateTime createdAt)
+    {
+        CompanyId = id;
+        Name = name;
+        CreatedAt = createdAt;
+    }
 
-    public Company(string name){
+    public Company(string name)
+    {
         if (string.IsNullOrWhiteSpace(name))
-            throw new ArgumentNullException("Company name is required");
+            throw new DomainException("Company name is required");
 
         CompanyId = Guid.NewGuid();
         Name = name.Trim();
         CreatedAt = DateTime.UtcNow;
+    }
+
+    public static Company Rehydrate(
+        Guid id,
+        string name,
+        DateTime createdAt
+    )
+    {
+        return new Company(id, name, createdAt);
     }
 
 }

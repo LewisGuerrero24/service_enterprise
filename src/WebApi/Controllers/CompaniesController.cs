@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using serviceEnterprise.Application.Common;
 using serviceEnterprise.Application.DTOs.Company;
 using serviceEnterprise.Application.Interfaces;
 
@@ -19,13 +20,14 @@ public class CompaniesController : ControllerBase
     public async Task<IActionResult> Get()
     {
         var companies = await _service.GetAllAsync();
-        return Ok(companies);
+        return Ok(ApiResponse<IReadOnlyList<CompanyDto>>
+            .Ok(companies, "Companies retrieved successfully"));
     }
 
-    // [HttpPost]
-    // public async Task<IActionResult> Create([FromBody] CreateCompanyDto dto)
-    // {
-    //     await _service.CreateAsync(dto);
-    //     return Created(string.Empty, null);
-    // }
+    [HttpPost]
+    public async Task<IActionResult> Create([FromBody] CreateCompanyDto dto)
+    {
+        var result = await _service.CreateAsync(dto);
+        return Ok(ApiResponse<CompanyDto>.Ok(result, "Company created successfully"));
+    }
 }

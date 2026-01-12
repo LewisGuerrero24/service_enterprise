@@ -44,13 +44,17 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[16.0.0, )"
+              "version": "[12.0.1, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
             },
             "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[12.1.1, )"
             }
@@ -228,6 +232,9 @@
               "/home/maicolcubides/Documentos/service_enterprise/src/Application/serviceEnterprise.Application.csproj": {
                 "projectPath": "/home/maicolcubides/Documentos/service_enterprise/src/Application/serviceEnterprise.Application.csproj"
               },
+              "/home/maicolcubides/Documentos/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj": {
+                "projectPath": "/home/maicolcubides/Documentos/service_enterprise/src/Domain/serviceEnterprise.Domain.csproj"
+              },
               "/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj": {
                 "projectPath": "/home/maicolcubides/Documentos/service_enterprise/src/Infrastructure/serviceEnterprise.Infrastructure.csproj"
               }
@@ -244,6 +251,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.22, )"
